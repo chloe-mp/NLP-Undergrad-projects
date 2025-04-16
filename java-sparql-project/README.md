@@ -32,23 +32,6 @@ This Java project demonstrates how to load and query RDF data using the [Apache 
 
 ---
 
-## 🔧 How to Run
-
-1. **Install Maven** if not already installed.
-
-2. **Update the RDF file path** in `App.java` and `SparqlExample.java`:
-   ```java
-   String filePath = "/path/to/your/TD11.rdf";
-
-3. **Compile the project:
-   'nvm compile'
-
-4. **Run the application:
-   mvn exec:java -Dexec.mainClass="sparql.App"
-
-5. **Run tests:
-   nvm test
-
   ## Features
   
 RDF file parsing using Apache Jena
