@@ -1,0 +1,741 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46/"
+     xml:base="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-46="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46">
+        <owl:imports rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_en_relation_de_fraterie_avec -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_en_relation_de_fraterie_avec">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_en_relation_de_fraterie_avec"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <dc:creator>chloe</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_enfant_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_enfant_de">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_enfant_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <dc:creator>chloe</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_fille_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_fille_de">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_enfant_de"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Femme"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_enfant_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <dc:creator>chloe</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_fils_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_fils_de">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_enfant_de"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Homme"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_enfant_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <dc:creator>chloe</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_frere_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_frere_de">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_en_relation_de_fraterie_avec"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Homme"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_frere_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <dc:creator>chloe</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_mere_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_mere_de">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_parent_de"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Femme"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_mere_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <dc:creator>chloe</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_parent_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_parent_de">
+        <owl:inverseOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_parent_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <dc:creator>chloe</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_pere_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_pere_de">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_parent_de"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Homme"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_pere_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <dc:creator>chloe</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_soeur_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_soeur_de">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_en_relation_de_fraterie_avec"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Femme"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_soeur_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Femme"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <dc:creator>chloe</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#se_marier_avec -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#se_marier_avec">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#se_marier_avec"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Age">
+        <dc:creator>chloe</dc:creator>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Nom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Nom">
+        <dc:creator>chloe</dc:creator>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#age">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#nationalite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#nationalite">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#nom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#nom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Enfants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Enfants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Femme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Femme">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Grand-mère"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Mère"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Soeur"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Homme"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Fille -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Fille">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_fille_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Parents"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Enfants"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Fils"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Fils -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Fils">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_fils_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Parents"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Enfants"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Fraterie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Fraterie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Frère -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Frère">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_frere_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Soeur"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Fraterie"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Grand-mère -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Grand-mère">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Grands-parents"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Grand-père"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Grand-père -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Grand-père">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Grands-parents"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Grands-parents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Grands-parents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Homme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Homme">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Frère"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Grand-père"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Père"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Mère -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Mère">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_mere_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Enfants"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Parents"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Père"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Parents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Parents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Père -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Père">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_pere_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Enfants"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Parents"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Soeur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Soeur">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#est_soeur_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Frère"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Fraterie"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Andrea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Andrea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Homme"/>
+        <untitled-ontology-46:est_pere_de rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Emanuel"/>
+        <untitled-ontology-46:se_marier_avec rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Carla"/>
+        <untitled-ontology-46:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45</untitled-ontology-46:age>
+        <untitled-ontology-46:nationalite>Italienne</untitled-ontology-46:nationalite>
+        <untitled-ontology-46:nom>Andrea</untitled-ontology-46:nom>
+        <dc:creator>chloe</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Baptiste -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Baptiste">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Homme"/>
+        <untitled-ontology-46:est_fils_de rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Manuella"/>
+        <untitled-ontology-46:est_fils_de rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Paul"/>
+        <untitled-ontology-46:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</untitled-ontology-46:age>
+        <untitled-ontology-46:nom>Baptiste</untitled-ontology-46:nom>
+        <dc:creator>chloe</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Carla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Carla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Femme"/>
+        <untitled-ontology-46:est_fille_de rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Clémentine"/>
+        <untitled-ontology-46:est_mere_de rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Victoria"/>
+        <untitled-ontology-46:se_marier_avec rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Andrea"/>
+        <untitled-ontology-46:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</untitled-ontology-46:age>
+        <untitled-ontology-46:nationalite>Française</untitled-ontology-46:nationalite>
+        <untitled-ontology-46:nom>Carla</untitled-ontology-46:nom>
+        <dc:creator>chloe</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Clémentine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Clémentine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Femme"/>
+        <untitled-ontology-46:est_mere_de rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Carla"/>
+        <untitled-ontology-46:est_mere_de rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Céline"/>
+        <untitled-ontology-46:se_marier_avec rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#George"/>
+        <untitled-ontology-46:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69</untitled-ontology-46:age>
+        <untitled-ontology-46:nationalite>Française</untitled-ontology-46:nationalite>
+        <untitled-ontology-46:nom>Clémentine</untitled-ontology-46:nom>
+        <dc:creator>chloe</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Céline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Céline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Femme"/>
+        <untitled-ontology-46:est_fille_de rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Clémentine"/>
+        <untitled-ontology-46:est_fille_de rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#George"/>
+        <untitled-ontology-46:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18</untitled-ontology-46:age>
+        <untitled-ontology-46:nom>Céline</untitled-ontology-46:nom>
+        <dc:creator>chloe</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Emanuel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Emanuel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Homme"/>
+        <untitled-ontology-46:est_fils_de rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Andrea"/>
+        <untitled-ontology-46:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-46:age>
+        <untitled-ontology-46:nationalite>Italienne</untitled-ontology-46:nationalite>
+        <untitled-ontology-46:nom>Emanuel</untitled-ontology-46:nom>
+        <dc:creator>chloe</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#George -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#George">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Homme"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Homme"/>
+            </owl:Restriction>
+        </rdf:type>
+        <untitled-ontology-46:est_pere_de rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Céline"/>
+        <untitled-ontology-46:est_pere_de rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Patrick"/>
+        <untitled-ontology-46:est_pere_de rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Paul"/>
+        <untitled-ontology-46:se_marier_avec rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Clémentine"/>
+        <untitled-ontology-46:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70</untitled-ontology-46:age>
+        <untitled-ontology-46:nationalite>Française</untitled-ontology-46:nationalite>
+        <untitled-ontology-46:nationalite>George</untitled-ontology-46:nationalite>
+        <dc:creator>chloe</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Jean -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Jean">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Homme"/>
+        <untitled-ontology-46:est_fils_de rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Manuella"/>
+        <untitled-ontology-46:est_fils_de rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Paul"/>
+        <untitled-ontology-46:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-46:age>
+        <untitled-ontology-46:nom>Jean</untitled-ontology-46:nom>
+        <dc:creator>chloe</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Manuella -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Manuella">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Femme"/>
+        <untitled-ontology-46:est_mere_de rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Baptiste"/>
+        <untitled-ontology-46:se_marier_avec rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Paul"/>
+        <untitled-ontology-46:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</untitled-ontology-46:age>
+        <untitled-ontology-46:nom>Manuella</untitled-ontology-46:nom>
+        <dc:creator>chloe</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Patrick -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Patrick">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Homme"/>
+        <untitled-ontology-46:est_fils_de rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#George"/>
+        <untitled-ontology-46:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">38</untitled-ontology-46:age>
+        <untitled-ontology-46:nom>Patrick</untitled-ontology-46:nom>
+        <dc:creator>chloe</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Paul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Paul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Homme"/>
+        <untitled-ontology-46:est_fils_de rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#George"/>
+        <untitled-ontology-46:est_pere_de rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Baptiste"/>
+        <untitled-ontology-46:est_pere_de rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Jean"/>
+        <untitled-ontology-46:se_marier_avec rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Manuella"/>
+        <untitled-ontology-46:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</untitled-ontology-46:age>
+        <untitled-ontology-46:nationalite>Française</untitled-ontology-46:nationalite>
+        <untitled-ontology-46:nom>Paul</untitled-ontology-46:nom>
+        <dc:creator>chloe</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Victoria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Victoria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Femme"/>
+        <untitled-ontology-46:est_fille_de rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Carla"/>
+        <untitled-ontology-46:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</untitled-ontology-46:age>
+        <untitled-ontology-46:nationalite>Française</untitled-ontology-46:nationalite>
+        <untitled-ontology-46:nom>Victoria</untitled-ontology-46:nom>
+        <dc:creator>chloe</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-46#Personne">
+        <dc:creator>chloe</dc:creator>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
