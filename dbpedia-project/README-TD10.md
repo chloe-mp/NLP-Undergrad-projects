@@ -9,11 +9,8 @@ This project demonstrates how to query semantic data from [DBpedia](https://dbpe
 - **`TD10.ipynb`**  
   Jupyter Notebook that performs SPARQL queries using the `SPARQLWrapper` library.
 
-- **`TD10.rdf`** *(optional)*  
-  RDF file (not used in the notebook, but may relate to other exercises).
-
-- **`HTML5 table2.html`**  
-  A responsive HTML table that could be used to display RDF or query results in the browser using Bootstrap.
+- **`TD10.rdf`**  
+  RDF file 
 
 ---
 
