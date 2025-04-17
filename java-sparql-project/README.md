@@ -66,4 +66,16 @@ Integrate with a web framework (e.g., Spring Boot) to expose queries via REST AP
 
 Visualize RDF data and query results
 
+---
+
+## 📄 License
+
+MIT License
+
+---
+
+## 👩‍💻 Author
+
+Created by **Chloé Petridis** as part of an academic exercise on semantic web technologies.
+
 
