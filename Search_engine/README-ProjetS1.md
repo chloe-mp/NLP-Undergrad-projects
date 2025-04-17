@@ -1,4 +1,4 @@
-# 📚 Fall semester final project -- Inverted index project
+# 📚 Fall semester final project - Inverted index project
 
 This project builds a basic inverted index from a corpus of French documents. It allows identifying which files contain a given word, functioning like a simple keyword search engine.
 
