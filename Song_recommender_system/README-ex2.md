@@ -1,4 +1,4 @@
-# 🎵 TD4 Exercise 2 – Music Recommendation System Using TF-IDF
+# 🎵 Exercise 2 – Music Recommendation System Using TF-IDF
 
 This notebook demonstrates a simple content-based recommendation system by comparing song lyrics using **TF-IDF** and **cosine similarity**.
 

@@ -1,4 +1,4 @@
-# 🎬 TD4 Exercise 1 – Movie Plot Preprocessing and Jaccard Similarity
+# 🎬 Exercise 1 – Movie Plot Preprocessing and Jaccard Similarity
 
 This notebook demonstrates how to preprocess movie plot summaries using basic Natural Language Processing (NLP) techniques and compute the Jaccard similarity between them.
 
