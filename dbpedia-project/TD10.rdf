@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35/"
+     xml:base="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-35="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#EstMariéA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#EstMariéA">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#EstMariéA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Marie"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#EstMariéA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Paul"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <dc:creator>chloe</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#HabiteA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#HabiteA">
+        <dc:creator>chloe</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Profession -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Profession">
+        <dc:creator>chloe</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Sexe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Sexe">
+        <dc:creator>chloe</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Famille_Durand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Famille_Durand">
+        <dc:creator>chloe</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Marie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Marie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Famille_Durand"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Paul -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Paul">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Famille_Durand"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Avocat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Avocat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Paul"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Homme"/>
+        <untitled-ontology-35:HabiteA rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Paris"/>
+        <untitled-ontology-35:Profession rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Avocat"/>
+        <untitled-ontology-35:Sexe rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Homme"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Homme -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Homme"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Femme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Femme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Marie"/>
+        <untitled-ontology-35:HabiteA rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Paris"/>
+        <untitled-ontology-35:Profession rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Médecin"/>
+        <untitled-ontology-35:Sexe rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Femme"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Homme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Homme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Paul"/>
+        <untitled-ontology-35:HabiteA rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Paris"/>
+        <untitled-ontology-35:Profession rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Avocat"/>
+        <untitled-ontology-35:Sexe rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Homme"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Médecin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Médecin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Marie"/>
+        <untitled-ontology-35:HabiteA rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Paris"/>
+        <untitled-ontology-35:Profession rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Médecin"/>
+        <untitled-ontology-35:Sexe rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Femme"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Paris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Paris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Marie"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chloe/ontologies/2023/3/untitled-ontology-35#Paul"/>
+        <dc:creator>chloe</dc:creator>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
